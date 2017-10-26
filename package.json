@@ -1,0 +1,20 @@
+{
+  "name": "name-tag-server",
+  "version": "1.0.0",
+  "description": "JSONApi Server for the Name Tag Studio App",
+  "main": "server.js",
+  "scripts": {
+    "dev": "export NODE_ENV=dev && nodemon server.js",
+    "db": "mongod --dbpath data/db/",
+    "test": "mocha --timeout 10000"
+  },
+  "author": "Jordan Riser",
+  "license": "ISC",
+  "dependencies": {
+    "jsonapi-server": "^3.2.2"
+  },
+  "devDependencies": {
+    "jsonapi-store-mongodb": "^2.0.0",
+    "nodemon": "^1.12.1"
+  }
+}
